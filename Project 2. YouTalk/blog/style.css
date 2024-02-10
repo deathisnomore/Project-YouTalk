@@ -1,0 +1,714 @@
+* {
+    font-family: Montserrat, sans-serif;
+
+}
+.body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    background-position: center top 401px;
+    background-repeat: repeat-x;
+    background-image: none;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Montserrat medium", sans-serif;
+}
+
+/* Header */
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 120px;
+    border-bottom: 2px solid #EFF5FB;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    gap: 30px;
+    font-family: "Montserrat Medium", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header__link {
+    font-family: "Montserrat Medium";
+}
+
+.header__btn {
+    border: none;
+    border-radius: 4px;
+    color: #03B2A5;
+    background: #E3F5F5;
+    width: 230px;
+    min-height: 48px;
+    font-size: 16px;
+    font-family: "Montserrat Bold", sans-serif;
+    cursor: pointer;
+}
+
+.header__btn:hover {
+    background-color: #03B2A5;
+    color: #fff;
+    transition: 0.5s;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 48px;
+}
+
+.hero__nav-btn {
+    font-family: "Montserrat Bold";
+    font-size: 14px;
+}
+
+/* Ipad Pro 12.9 */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 14px 32px;
+        width: 100%;
+    }
+
+    .header__list {
+        font-size: 12px;
+        gap: 16px;
+    }
+}
+
+/* Ipad mini */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .container ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    main, .header {
+        padding-left: 20px;
+        padding-right: 20px;   
+    }
+
+    .header__nav-container {
+            display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    #burger {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        justify-content: end;
+        align-items: center;
+        flex-shrink: 0;
+        border: none;
+        background-color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Iphone 11 Pro Max, SE */
+@media screen and (max-width: 414px) {
+    .container {
+        padding: 19px 24px;
+    }
+}
+
+.header {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    min-height: 76px;
+    padding-left: 120px;
+    padding-right: 120px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__lists {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    
+}
+.link {
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    letter-spacing: 0.25px;
+    
+}
+
+.header__btn {
+    background-color: #E3F5F5;
+    color: #03B2A5;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 14px 20px;
+    line-height: 20px;
+}
+
+@media (min-width: 768px) {
+    #burger {
+    display: none;
+    }
+}
+    
+.header__logo {
+    padding-right: 30px;
+}
+
+/* Main */
+
+main {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    flex: 1 1 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.main {
+    display: flex;
+}
+
+.main__pages {
+color: rgba(51, 51, 51, 0.7);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: 0.25px;
+}
+
+.hero__nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.hero__nav-btn, .articles__content {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    background-color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 24px;
+    border: 1px solid #C1C5CD;
+    padding: 6px 8px;
+    gap: 0 4px;
+    cursor: pointer;
+    font-family: "Montserrat SemiBold", sans-serif;
+}
+
+.articles {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 24px;
+    row-gap: 23px;
+    justify-content: space-between;
+    min-width: 25%;
+}
+
+.articles__card {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100%;
+    position: relative;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 16px;
+    border: 1px solid #dedede;
+    border-style: solid;
+    cursor: pointer;
+    text-decoration: none;
+    grid-column: span 3;
+}
+.articles__card:nth-child(3) {
+    grid-column: span 2;
+}
+.articles__card:nth-child(4) {
+    grid-column: span 2;
+}
+.articles__card:nth-child(5) {
+    grid-column: span 2;
+}
+.articles__card:nth-child(6) {
+    grid-column: span 2;
+}
+.articles__card:nth-child(7) {
+    grid-column: span 2;
+}
+.articles__card:nth-child(8) {
+    grid-column: span 2;
+}
+
+.articles__contents {
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333;
+    display: inline-flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    top: 2%;
+    left: 2%;
+    right: 0;
+    bottom: 0;
+    align-items: flex-start;
+    gap: 8px;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.contents__txt {
+    font-family: "Montserrat SemiBold", sans-serif;
+    font-size: 14px;
+}
+
+.articles__heading {
+    padding-left: 16px;
+    cursor: pointer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    color: #333;
+    margin-bottom: 1%;
+    font-family: "Montserrat Bold", sans-serif;
+}
+
+.articles__author {
+    cursor: pointer;
+    margin: 0;
+    padding-left: 16px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: #494949;
+    margin-bottom: 2%;
+    font-family: "Montserrat";
+}
+
+.articles__text {
+    font-family: "Montserrat";
+    cursor: pointer;
+    margin: 0;
+    padding-left: 16px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333;
+    margin-bottom: 2%;
+}
+
+.articles__img_card {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.9em;
+    border-top-right-radius: 0.9em;
+    height: 260px;
+}
+
+.articles__info_card {
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 16px;
+    height: 196px;
+}
+
+.articles__date {
+    margin: 0px;
+    padding: 16px 16px;
+    font-size: 12px;
+    font-family: "Montserrat";
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: rgb(134, 134, 134);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.articles__button {
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.articles__button button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 4%;
+    margin-bottom: 7%;
+    min-width: 182px;
+    max-width: 182px;
+    color: #FFF;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 4px;
+    gap: 8px;
+    background: #35B3A9;
+    cursor: pointer;
+}
+
+/* Ipad mini */
+@media (max-width: 768px) {
+    .articles__info_card {
+        height: 196px;
+        padding: 16px;
+    }
+    
+    .articles__info_card:nth-child(n+3) {
+        height: 242px;
+        padding: 16px;
+    }
+
+    .articles__card:nth-child(1) {
+        grid-column: span 6 ;
+    }
+
+    .articles__card:nth-child(2) {
+        grid-column: span 6 ;
+    }
+
+    .articles__card:nth-child(n+3) {
+        grid-column: span 3 ;
+    }
+
+    .hero__nav {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        flex-wrap: wrap;
+        }
+}
+
+/* Footer */
+
+.footer__container {
+    margin-top: 96px;
+    background-color: rgba(41, 99, 163, 1);
+    padding: 40px 0 0 120px;
+}
+
+.footer__items {
+    display: flex;
+}
+
+.footer__first-column,
+.footer__second-column {
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__first-column a,
+.footer__second-column a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer__second-column {
+    padding-left: 5.8rem;
+}
+
+.footer__third-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5.7rem;
+}
+
+.footer__third-column__subscribe-title {
+    font-size: 18px;
+    font-family: "Montserrat Bold";
+    color: #fff;
+}
+
+.footer__third-column__subscribe input {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.footer__third-column__subscribe__value {
+    color: rgba(157, 157, 157, 1);
+    font-size: 14px;
+    font-family: "Montserrat";
+}
+
+.footer__third-column__button {
+    width: 4rem;
+    height: 3rem;
+    background-color: rgba(22, 200, 187, 1);
+    border-radius: 0 4px 4px 0;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.footer__third-column__text {
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: #fff;
+    width: 30.4rem;
+    padding-top: 0.5rem;
+    opacity: 0.7;
+}
+
+.footer__fourth-column {
+    padding-left: 5.7rem;
+}
+
+.footer__fourth-column__group-icon {
+    display: flex;
+    padding-top: 2.4rem;
+    gap: 1rem;
+}
+
+.footer__line {
+    border: none;
+    height: 1px;
+    width: 76rem;
+    background-color: rgba(157, 157, 157, 1);
+    margin-top: 24px;
+}
+
+.footer__base-info {
+    display: flex;
+    gap: 48px;
+    font-family: "Montserrat    ";
+    font-size: 14px;
+    padding: 16px 0 17px 0;
+}
+
+.footer__base-info {
+    display: flex;
+    gap: 48px;
+    font-size: 14px;
+    padding: 16px 0 17px 0;
+}
+
+.footer__base-info a {
+    color: #fff;
+    opacity: 0.7;
+}
+
+/* Ipad Pro 12.9 */
+@media screen and (max-width: 1024px) {
+    .footer__container{
+        padding: 40px 0 0 38px;
+        margin-top: 60px;
+    }
+
+    .footer__second-column{
+        padding-left: 30px;
+    }
+
+    .footer__third-column{
+        padding-left: 21px;
+    }
+
+    .footer__third-column__text{
+        width: 450px;
+    }
+
+    .footer__fourth-column{
+        padding: 26px 0 0 0;
+    }
+
+    .footer__line{
+        width: 960px;
+        margin-top: 20px;
+    }
+
+    .footer__base-info{
+        padding-top: 20px;
+    }
+}
+
+/* Ipad mini */
+@media screen and (max-width: 768px) {
+    .footer__container{
+        padding: 35px 0 0 20px;
+        margin-top: 55px;
+    }
+
+    .footer__items{
+        flex-wrap: wrap;
+    }
+
+    .footer__line{
+        width: 728px;
+        margin-top: 27px;
+    }
+}
+
+/* Iphone 11 Pro Max */
+@media screen and (max-width: 414px) {
+    .footer__container{
+        padding: 35px 0 0 20px;
+        margin-top: 55px;
+    }
+
+    .footer__second-column{
+        padding-left: 128px;
+    }
+
+    .footer__third-column{
+        padding-left: 0px;
+        padding-top: 23px;
+    }
+
+    .footer__third-column{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__third-column__subscribe input {
+        width: 288px;
+    }
+
+    .footer__third-column__text{
+        width: 375px;
+    }
+
+    .footer__third-column__subscribe-title{
+        padding-bottom: 8px;
+    }
+
+    .footer__fourth-column__group-icon{
+        padding-top: 20px;
+    }
+
+    .footer__line{
+        width: 374px;
+        margin-top: 20px;
+    }
+
+    .footer__base-info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Iphone SE */
+@media screen and (max-width: 320px) {
+    .footer__second-column{
+        padding-left: 60px;
+        padding-bottom: 23px;
+    }
+
+    .footer__third-column{
+        padding: 0px;
+        width: 288px;
+    }
+
+    .footer__third-column__button{
+        display: none;
+    }
+
+    .footer__third-column__text{
+        width: 288px;
+    }
+
+    .footer__line{
+        width: 288px;
+    }
+}
+
+    
